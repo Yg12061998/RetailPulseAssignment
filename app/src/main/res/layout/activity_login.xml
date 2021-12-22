@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginMessage"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        app:boxBackgroundColor="@color/backGroundEditText"
+        android:hint="@string/UserDetail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="18dp"
+        android:id="@+id/edtPassword"
+        app:endIconMode="password_toggle"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        app:boxBackgroundColor="@color/backGroundEditText"
+        android:layout_height="wrap_content"
+        android:hint="@string/userPassword">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:paddingHorizontal="30dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="18dp"
+        android:textStyle="bold"
+        android:paddingVertical="13dp"
+        android:id="@+id/btnLogIn"
+        android:layout_width="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:text="@string/logInButton"
+        />
+
+
+</LinearLayout>
